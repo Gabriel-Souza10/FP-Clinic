@@ -1,0 +1,274 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header geral */
+header {
+    display: flex;
+    justify-content: space-between; /* Espaço entre logo, menu e ícones */
+    align-items: center; /* Alinha verticalmente */
+    background-color: #bcbcbd; /* Fundo verde */
+    padding: 10px 20px; /* Espaçamento interno */
+    position: fixed; /* Fixado no topo */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    
+}
+
+/* Logo */
+header .logo img {
+    height: 35px; /* Altura fixa da logo */
+    object-fit: contain; /* Garante que a imagem não distorça */
+}
+
+/* Menu */
+header .menu ul {
+    list-style: none; /* Remove marcadores */
+    display: flex;
+    gap: 20px; /* Espaço entre os itens do menu */
+    margin: 0;
+    padding: 0;
+}
+
+header .menu ul li a {
+    color: black; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Animação no hover */
+}
+
+header .menu ul li a:hover {
+    color: #ffcc00; /* Cor amarela ao passar o mouse */
+}
+
+/* Social icons container */
+header .social-icons {
+    display: flex;
+    gap: 15px; /* Espaço entre os ícones */
+    align-items: center; /* Garante alinhamento vertical */
+}
+
+/* Ícones de redes sociais */
+header .social-icons a img {
+    width: 24px; /* Largura do ícone */
+    height: 24px; /* Altura do ícone */
+    object-fit: contain; /* Garante que a imagem não deforma */
+    transition: transform 0.3s ease; /* Animação ao passar o mouse */
+}
+
+/* Ajusta o comportamento do hover */
+header .social-icons a img:hover {
+    transform: scale(1.2); /* Aumenta levemente no hover */
+}
+
+/* Previne estouro para fora do header */
+header {
+    overflow: hidden; /* Garante que nenhum conteúdo vaze */
+    box-sizing: border-box; /* Inclui padding e border no cálculo do tamanho */
+    
+}
+
+
+
+/* Estilo da seção de serviços */
+.services-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin-top: 50px;
+}
+
+.services-section h1 {
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cada item ocupa no mínimo 250px */
+    gap: 30px; /* Espaço entre linhas e colunas */
+    justify-content: center; /* Centraliza a grade horizontalmente */
+    margin: 20px auto; /* Espaçamento externo da grade */
+    width: 90%; /* Controla a largura total da grade */
+}
+
+
+/* Itens de serviço */
+.service-item {
+    background-color: #fff;
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 15px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto e a imagem */
+    height: auto; /* Garante que a altura seja automática */
+    margin: 0; /* Remove margens que poderiam causar sobreposição */
+}
+
+
+.service-item img {
+    width: 100%; /* Ocupa toda a largura do item */
+    height: 150px; /* Altura fixa para manter o formato */
+    object-fit: cover; /* Ajusta a imagem dentro do espaço sem distorção */
+    border-radius: 8px; /* Mesmos cantos arredondados do item */
+    margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+}
+
+
+.service-item h2 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+    color: #008000;
+}
+
+.service-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Botão para revelar mais serviços */
+.show-more-button {
+    display: inline-block;
+    margin: 20px auto; /* Centraliza e adiciona espaço acima e abaixo */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #093023;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.show-more-button:hover {
+    background-color: #e4bb54;
+}
+
+/* Esconde serviços adicionais inicialmente */
+.extra-services {
+    display: none; /* Ocultos por padrão */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grade consistente */
+    gap: 30px; /* Espaçamento consistente */
+}
+
+
+
+
+.services-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-item {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-item h2 {
+    font-size: 20px;
+    color: #e4bb54;
+    margin: 10px 0;
+}
+
+.services-text p {
+    font-size: 16px;
+    color: #666;
+    padding: 10px;
+}
+
+#footer {
+    background-color: #bcbcbd; /* Fundo verde */
+    color: #000; /* Texto branco */
+    padding: 20px 10px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 2px solid #bcbcbd; /* Linha superior para destaque */
+}
+
+#footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer .social-links {
+    margin-top: 10px;
+}
+
+#footer .social-links a {
+    color: #000; /* Links brancos */
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#footer .social-links a:hover {
+    text-decoration: underline; /* Efeito ao passar o mouse */
+    color: #e4bb54; /* Cor amarela no hover */
+}
+
+.services-image img {
+    width: 500px; /* Largura da imagem */
+    height: auto; /* Mantém a proporção */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para a imagem */
+}
+
+.services-image img {
+    width: 300px; /* Largura fixa */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+.services-text {
+    flex: 1; /* O texto ocupa o espaço restante */
+    background-color: #bcbcbd; /* Fundo branco */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-left: 4px solid #e4bb54; /* Linha decorativa na esquerda */
+    border-right: 4px solid #e4bb54;
+}
+
+.services-text h1 {
+    font-size: 32px; /* Tamanho do título */
+    color: #000; /* Cor do título */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+}
+
+.services-text p {
+    font-size: 16px; /* Tamanho do texto */
+    line-height: 1.8; /* Espaçamento entre linhas */
+    color: #333; /* Cor do texto */
+    text-align: justify; /* Justifica o texto */
+}
+.services-content {
+    display: flex; /* Coloca os itens lado a lado */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: space-between; /* Espaço entre imagem e texto */
+    gap: 20px; /* Espaçamento entre os itens */
+    max-width: 1200px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}

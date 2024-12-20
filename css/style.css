@@ -1,0 +1,437 @@
+/* Reset de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #bcbcbd; /* Cor verde */
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 50px;
+    object-fit: contain;
+}
+
+header .menu ul {
+    list-style: none; /* Remove marcadores */
+    display: flex;
+    gap: 20px; /* Espaço entre os itens do menu */
+    margin: 0;
+    padding: 0;
+}
+
+header .menu ul li a {
+    color: black; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Animação no hover */
+}
+
+header .menu ul li a:hover {
+    color: #ffcc00; /* Cor amarela ao passar o mouse */
+}
+
+
+header .social-icons img {
+    width: 24px;
+    margin-left: 10px;
+}
+
+/* Estilo para a Página 1 */
+#inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh; /* Altura da tela inteira */
+    background-color: #bcbcbd; /* Fundo verde */
+    padding-top: 60px; /* Compensa o header fixo */
+}
+
+#inicio .content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#inicio .text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    color: #000;
+    text-align: center;
+}
+
+#inicio .text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+
+
+#inicio .text button {
+    padding: 10px 20px;
+    background-color: #393939;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+#inicio .text button {
+    margin: 20px auto 0; /* Espaço acima e centralização horizontal */
+    display: block; /* Garante que o botão seja tratado como um bloco */
+}
+/* Efeito ao passar o mouse no botão */
+#inicio .text button:hover {
+    background-color: #e4bb54; /* Cor mais escura ao passar o mouse */
+    color: #fff; /* Texto branco */
+}
+
+#inicio .image-full {
+    flex: 1;
+    background: url('../img/GarotaFundo.png') no-repeat center center / cover;
+    height: 92vh;
+}
+#inicio .text img.image-medium {
+    width: 250px; /* Largura da imagem */
+    height: 250px; /* Altura igual para ficar quadrada */
+    object-fit: cover; /* Garante que a imagem se encaixe no quadrado */
+    margin: 0 auto 20px; /* Centraliza a imagem e adiciona espaço abaixo */
+    display: block; /* Garante que a centralização funcione */
+    border-radius: 10px; /* Adiciona cantos arredondados, opcional */
+}
+
+
+/* página 2 */
+#Procedimentos .titles {
+    text-align: center;
+    margin-bottom: 20px; /* Espaço entre os títulos e o restante do conteúdo */
+}
+
+#Procedimentos .titles h1 {
+    font-size: 36px;
+    color: #e4bb54; /* Cor principal */
+    margin: 0;
+}
+
+#Procedimentos .titles h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 15px; /* Espaço pequeno entre o h1 e o h2 */
+}
+
+#Procedimentos {
+    background-color: #fff; /* Fundo branco */
+    padding: 20px 20px 40px; /* Reduz o espaçamento superior */
+    margin-top: -20px; /* Reduz a distância entre Página 1 e Página 2 */
+    text-align: center;
+}
+
+
+#Procedimentos {
+    background-color: #fff; /* Fundo branco */
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 15px; /* Espaço entre Página 1 e Página 2 */
+}
+
+
+.gallery {
+    display: flex; /* Alinha os itens em linha */
+    flex-wrap: nowrap; /* Impede a quebra para novas linhas */
+    gap: 15px; /* Espaço entre os itens */
+    overflow-x: auto; /* Habilita a rolagem horizontal */
+    scroll-behavior: smooth; /* Rolagem suave */
+    padding: 20px 0; /* Espaço acima e abaixo da galeria */
+}
+
+.gallery::-webkit-scrollbar {
+    height: 8px; /* Altura da barra de rolagem */
+    background-color: #f0f0f0;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+    background-color: #e4bb54; /* Cor da barra de rolagem */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+.image-box {
+    flex: 0 0 auto; /* Garante que o tamanho do item seja fixo */
+    width: 150px; /* Largura da imagem */
+    text-align: center; /* Centraliza o texto */
+}
+
+.image-box img {
+    width: 100%; /* Ajusta a imagem à largura do container */
+    height: 150px; /* Altura fixa para manter a proporção */
+    object-fit: cover; /* Garante que a imagem preencha o espaço */
+    border-radius: 10px; /* Cantos arredondados */
+}
+
+.image-box p {
+    margin-top: 10px; /* Espaço entre a imagem e o texto */
+    font-size: 14px; /* Tamanho da fonte do texto */
+    color: #333; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+}
+.services-button {
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #393939; /* Cor de fundo */
+    color: #fff;
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Mostra a mãozinha ao passar o mouse */
+    font-size: 18px; /* Tamanho da fonte */
+    width: 300px; /* Largura fixa */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    margin: 20px auto; /* Espaçamento superior e centralização horizontal */
+    display: block; /* Garante que o botão se comporte como um bloco */
+}
+
+/* Efeito ao passar o mouse */
+.services-button:hover {
+    background-color: #e4bb54; /* Cor de fundo mais escura ao passar o mouse */
+    color: #fff; /* Texto branco */
+}
+
+
+/* página 3 */
+
+
+/* Estilo para a Página 3 */
+#sobre {
+    background-color: #bcbcbd; /* Fundo verde */
+    color: #000; /* Texto branco */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa a altura total da tela */
+    padding: 20px;
+}
+
+.info-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaço entre a imagem e o texto */
+    max-width: 1200px; /* Define uma largura máxima para o conteúdo */
+    width: 100%; /* Ocupa toda a largura disponível */
+}
+
+.blurred-image {
+    flex: 1; /* Ocupa metade do espaço */
+    height: 300px; /* Altura fixa para a imagem */
+    background: url('../img/fp\ clinic\ logo\ p.png') no-repeat center center / cover;
+    filter: blur(5px); /* Desfoca a imagem */
+    border-radius: 10px; /* Cantos arredondados */
+}
+
+.focused-text {
+    flex: 1; /* Ocupa metade do espaço */
+    text-align: left;
+    padding: 20px;
+}
+
+.focused-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.focused-text {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.focused-text {
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(20px); /* Deslocado para baixo */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Animação suave */
+}
+
+@media (max-width: 768px) {
+    .info-content {
+        flex-direction: column; /* Empilha a imagem e o texto */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .blurred-image {
+        width: 100%;
+        height: 200px; /* Reduz a altura em telas menores */
+    }
+
+    .focused-text {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+
+/* página 4 */
+
+
+/* Estilos da Página 4 */
+.location-title {
+    font-size: 32px; /* Tamanho grande para destaque */
+    color: #000; /* Verde para combinar com o tema */
+    text-align: center; /* Centralizado */
+    margin-bottom: 20px; /* Espaço entre o título e o mapa */
+}
+
+
+
+#localizacao {
+    background-color: #fff; /* Fundo branco */
+    padding: 20px;
+    margin-bottom: 40;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Altura do mapa */
+    margin-bottom: 20px;
+    background: url('../images/mapa.jpg') no-repeat center center / cover; /* Caminho do mapa */
+    border-radius: 10px; /* Cantos arredondados */
+    overflow: hidden;
+}
+
+.map {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilo do marcador */
+.marker {
+    position: absolute;
+    top: 50%; /* Ajuste para posicionar no local correto */
+    left: 50%; /* Ajuste para posicionar no local correto */
+    transform: translate(-50%, -50%); /* Centraliza exatamente no ponto */
+    width: 20px; /* Largura do marcador */
+    height: 20px; /* Altura do marcador */
+    background-color: red; /* Cor inicial */
+    border-radius: 50%; /* Deixa o marcador redondo */
+    animation: blink 1s infinite; /* Animação de piscar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Texto dentro do marcador */
+.marker-text {
+    position: absolute;
+    top: -25px; /* Ajuste de posição acima do marcador */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    color: #e4bb54; /* Texto branco */
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+/* Animação de piscar */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1; /* Totalmente visível */
+    }
+    50% {
+        opacity: 0; /* Invisível no meio da animação */
+    }
+}
+
+.text-above-map {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7); /* Sombra para o texto */
+}
+
+.text-above-map h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.text-above-map h3 {
+    font-size: 18px;
+    margin: 5px 0 0;
+}
+
+.info-below-map {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.info-below-map .left-text, .info-below-map .right-text {
+    width: 48%; /* Divide os textos igualmente */
+    text-align: center;
+    background-color: #bcbcbd; /* Fundo cinza claro */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.info-below-map h2 {
+    font-size: 20px;
+    color: #393939; /* Texto verde */
+}
+
+.info-below-map h3 {
+    font-size: 16px;
+    color: #333;
+}
+
+
+/* Footer */
+
+#footer {
+    background-color: #bcbcbd; /* Fundo verde */
+    color: #000; /* Texto branco */
+    padding: 20px 10px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 2px solid #bcbcbd; /* Linha superior para destaque */
+}
+
+#footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer .social-links {
+    margin-top: 10px;
+}
+
+#footer .social-links a {
+    color: #000; /* Links brancos */
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#footer .social-links a:hover {
+    text-decoration: underline; /* Efeito ao passar o mouse */
+    color: #e4bb54; /* Cor amarela no hover */
+}
